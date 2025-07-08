@@ -42,7 +42,7 @@ def give_answer(question,api_key,llm,temperature,max_tokens):
 st.title("Q&A BOT")
 
 st.sidebar.title("Get Model, Temperature, Max_tokens details")
-api_key = st.text_input("Enter the OPEN AI API KEY ", type="password")
+api_key = st.sidebar.text_input("Enter the OPEN AI API KEY ", type="password")
 
 llm = st.sidebar.selectbox("Select an Open AI model", ["gpt-4","gpt-4o-mini","gpt-3.5-turbo" ])
 
